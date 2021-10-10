@@ -1,6 +1,4 @@
 var path = require('path');
-var process = require('process');
-const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 module.exports = {
   devtool: 'source-map',
@@ -10,13 +8,9 @@ module.exports = {
     filename: 'app.js',
     devtoolModuleFilenameTemplate: '.[resource-path]'
   },
-  resolveLoader: {
-    modules: ['node_modules', process.env.NODE_PATH]
-  },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx', ".css"],
     alias: { 'react': 'preact/compat', 'react-dom': 'preact/compat' },
-    modules: ['node_modules', process.env.NODE_PATH],
   },
   module: {
     rules: [
