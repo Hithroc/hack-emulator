@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+html, body {
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  background-color: #303030;
+  color: #BBBBBB;
+  font-family: Roboto;
+}
+
+.top-level {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+}
+
+.gutter {
+  background-color: #202020;
+  cursor: col-resize;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  gap: 1em;
+  padding: 1em 1em 1em 1em;
+}
+
+.column-title {
+  align-self: center;
+  font-size: larger;
+  font-weight: bold;
+  background-color: #505050;
+  width: 100%;
+  text-align: center;
+  padding:0.5em;
+}
+
+.load {
+  width: 100%;
+}
+
+.code-input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid transparent;
+  background-color: #404040;
+  color: white;
+  font-family: 'Roboto Mono';
+  overflow: scroll;
+  resize: none;
+}
+
+.code-input:focus {
+  outline: none;
+  border: 1px solid lightblue;
+}
+
+.memory {
+  font-family: 'Roboto Mono';
+  display: flex;
+}
+
+.memory-ix {
+  width: 5ch;
+  text-align: right;
+  color: white;
+}
+
+.memory-highlight {
+  background-color: #606060;
+}
+
+.memory-even {
+  background-color: #353535;
+}
+
+.memory-content {
+  padding-left: 1ch;
+}
+
+.io {
+  min-width: 550px;
+}
+
+.display {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  border:2px solid grey;
+}
+
+.display:focus {
+  border:2px solid lightblue;
+}
+
+.computerstate {
+  font-family: Roboto Mono;
+}

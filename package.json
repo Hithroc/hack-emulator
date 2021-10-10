@@ -1,0 +1,32 @@
+{
+  "name": "hack-emulator",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "webpack --mode production"
+  },
+  "dependencies": {
+    "preact": "*",
+    "react-simple-code-editor": "*",
+    "react-virtuoso": "*",
+    "react-simple-resizer": "*",
+    "react-split": "*"
+  },
+  "devDependencies": {
+    "serve": "*",
+    "webpack": "*",
+    "webpack-cli": "*",
+    "node2nix": "*",
+    "typescript": "*",
+    "ts-loader": "*",
+    "css-loader": "*",
+    "style-loader": "*",
+    "vscode-css-languageserver-bin": "*",
+    "vscode-html-languageserver-bin": "*",
+    "typescript-language-server": "*",
+    "webpack-bundle-analyzer": "*",
+    "@types/react": "*",
+    "eslint": "*",
+    "@typescript-eslint/parser": "*",
+    "@typescript-eslint/eslint-plugin": "*"
+  }
+}

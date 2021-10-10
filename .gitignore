@@ -1,0 +1,4 @@
+.vscode
+result
+dist/app.js*
+node_modules

@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "jsx": "react",
+    "jsxFactory": "h",
+    "module": "commonjs",
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true
+  },
+  "include":
+    [ "./src/**/*.tsx"
+    , "./src/**/*.ts"
+    ]
+}
