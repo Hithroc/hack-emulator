@@ -6,9 +6,7 @@
   },
   "dependencies": {
     "preact": "*",
-    "react-simple-code-editor": "*",
     "react-virtuoso": "*",
-    "react-simple-resizer": "*",
     "react-split": "*"
   },
   "devDependencies": {
