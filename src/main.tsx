@@ -93,7 +93,7 @@ class App extends Component<AppProps, AppState> {
         <div class="column io">
           <div class="column-title">I/O</div>
           <Display imgData={this.computer.computer.screenSlice()} kbData={this.computer.computer.keyboardSlice()} />
-          <Controls onStep={() => this.step()} onStateChange={s => this.runPause(s)} onStop={() => {this.computer.reset()}} onClockChange={clock => this.computer.setClock(clock)} measuredSpeed={this.computer.measuredSpeed} />
+          <Controls onStep={() => this.step()} onStateChange={s => this.runPause(s)} onReset={() => {this.computer.reset()}} onClockChange={clock => this.computer.setClock(clock)} measuredSpeed={this.computer.measuredSpeed} />
           <ComputerState
             regA={this.computer.computer.regA}
             regM={this.computer.computer.ram[this.computer.computer.regA]}

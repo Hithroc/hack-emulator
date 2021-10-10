@@ -18,7 +18,7 @@ function ppExecButton(state : ExecState): string {
 type ControlsProps = {
   onClockChange : (i : number) => void;
   onStateChange : (state : ExecState) => void;
-  onStop : () => void;
+  onReset : () => void;
   onStep : () => void;
   measuredSpeed : number;
 }
@@ -38,10 +38,10 @@ export function Controls(props: ControlsProps): h.JSX.Element {
     props.onStateChange(newState);
   };
 
-  const handleStop = () => {
+  const handleReset = () => {
     setRunState("paused");
     props.onStateChange("paused")
-    props.onStop();
+    props.onReset();
   };
   
   const ppClock = (clock : number) => {
@@ -62,7 +62,7 @@ export function Controls(props: ControlsProps): h.JSX.Element {
       <LogSlider lowBound={1} highBound={100000000} resolution={1000} onChange={i => handleClockChange(i)} /><div>{ppClock(clock)} <abbr title="Measured speed">({ppClock(props.measuredSpeed)})</abbr></div>
       <button class="play-pause" style="width:50px;" onClick={() => handleStateChange()}>{ppExecButton(runState)}</button>
       <button class="step" onClick={() => props.onStep()} disabled={runState == "running"}>Step</button>
-      <button class="stop" onClick={() => handleStop()} disabled={runState == "paused"}>Stop</button>
+      <button class="reset" onClick={() => handleReset()}>Reset</button>
     </div>
   );
 }
